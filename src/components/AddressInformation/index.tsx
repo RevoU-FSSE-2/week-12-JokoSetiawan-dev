@@ -59,6 +59,28 @@ const AddressForm = () => {
         />
         {formMik.errors.city && <p>{formMik.errors.city}</p>}
       </div>
+      <div>
+        <p>State</p>
+        <Input
+          name={"state"}
+          value={formMik.values.state}
+          onChange={formMik.handleChange("state")}
+          className={formMik.errors.state && "error"}
+        />
+        {formMik.errors.state && <p>{formMik.errors.state}</p>}
+      </div>
+      <div>
+        <p>State</p>
+        <Input
+          name={"zipcode"}
+          value={formMik.values.zipcode}
+          onChange={formMik.handleChange("zipcode")}
+          className={formMik.errors.zipcode && "error"}
+        />
+        {formMik.errors.zipcode && <p>{formMik.errors.zipcode}</p>}
+      </div>
     </form>
   );
 };
+
+export default AddressForm

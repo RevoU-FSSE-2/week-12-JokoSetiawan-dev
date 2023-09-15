@@ -2,7 +2,7 @@ import {Input, DatePicker} from "antd"
 import { useFormik } from "formik"
 import * as yup from "yup"
 
-interface Account {
+interface Personal {
     fullname: string;
     email: string;
     birthdate: string;
@@ -20,8 +20,8 @@ const validationSchema = yup.object ({
     birthdate: yup.string().required('Please nput your birthdate').matches(/^(19|20)\d\d-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/, 'Invalid birthdate format (DD-MM-YYYY)')
 })
 
-const FormAccount = () => {
-    const handleSubmit = (values: Account) => {
+const FormPersonal = () => {
+    const handleSubmit = (values: Personal) => {
         console.log(values);
     }
 
@@ -61,4 +61,4 @@ const FormAccount = () => {
     )
 }
 
-export default FormAccount
+export default FormPersonal
