@@ -3,7 +3,7 @@ import './App.css'
 import { MultistepForm } from './container'
 
 
-const App = () => {
+const App: React.FC = () => {
 
   return(
     <>
