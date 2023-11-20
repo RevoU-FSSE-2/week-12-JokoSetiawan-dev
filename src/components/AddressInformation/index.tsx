@@ -70,7 +70,7 @@ const AddressForm = () => {
         {formMik.errors.state && <p>{formMik.errors.state}</p>}
       </div>
       <div>
-        <p>State</p>
+        <p>Zipcode</p>
         <Input
           name={"zipcode"}
           value={formMik.values.zipcode}
